@@ -1,0 +1,59 @@
+inp = ""
+while inp != "cube" and inp != "cuboid" and inp != "cylinder" and inp!= "triangular prism" and inp!= "pentagonal prism" and inp!= "cone" and inp!= "sphere":
+    inp = input("Would you like to calculate the volume of a cube, cuboid, cylinder, triangular prism, pentagonal prism, cone or sphere? : ")
+    if inp != "cube" and inp != "cuboid" and inp != "cylinder" and inp!= "triangular prism" and inp!= "pentagonal prism" and inp!= "cone" and inp!= "sphere":
+        print("You must type 'cube','cuboid','cylinder','triangular prism','triangular prism','pentagonal prism','cone' or 'sphere'.")
+
+if inp == "cube":
+    l = float(input("Enter the length of the side of the cube ="))
+    b = l**3
+    print("Volume of the cube =", b)
+    
+   
+
+
+if inp == "cuboid":
+    k = float(input("Enter the length ="))
+    K = float(input("Enter the breadth ="))
+    U = float(input("Enter the height ="))
+    a = k * K * U
+    print("Volume of the cuboid =", a)
+    
+
+
+if inp == "cylinder":
+    o = float(input("Enter the radius of the circular base of the cylinder ="))
+    m = float(input("Enter the height of the cylinder ="))
+    E = 22/7 * o**2
+    n = E * m
+    print("Volume of the cylinder =",n)
+
+
+if inp == "triangular prism":
+    d = float(input("Enter the length of the triangular base ="))
+    D = float(input("Enter the height of the triangular base ="))
+    x = float(input("Enter the height of the triangular prism ="))
+    X = 1/2 * (d * D)
+    u = X * x
+    print("Volume of the triangular prism =",u)
+
+
+if inp == "pentagonal prism":
+    y = float(input("Enter the height of the pentagonal prism ="))
+    U = 56**2
+    j = U * y
+    print("Volume of the pentagonal prism =",j)
+
+
+if inp == "cone":
+    A = float(input("Enter the radius of the circular base ="))
+    B = float(input("Enter the height of the cone ="))
+    W = 22/7 * A**2
+    J = 1/3 * W * B
+    print("Volume of the cone =",J)
+
+
+if inp == "sphere":
+    A = float(input("Enter the radius of the sphere ="))
+    J = 4/3 * 22/7 * A**3
+    print("Volume of the sphere =",J)
